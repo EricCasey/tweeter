@@ -1,0 +1,48 @@
+article {
+  width: 85%;
+  margin: 10px auto 0px auto;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  overflow: hidden;
+  box-shadow: 5px 5px 3px #888888;
+}
+
+article header {
+  width: 100%;
+  background-color: #eee;
+  text-align: left;
+  padding: 2px;
+  float: left;
+  height: 65px;
+  border-bottom: 2px teal solid;
+}
+article header img {
+  height: 50px;
+  width: 50px;
+  margin: 4px;
+  position: absolute;
+  border: solid 3px #eee;
+  border-radius: 10px;
+}
+
+article header h2 {
+  position: absolute;
+  margin: 23px 0 0 60px;
+}
+article header p {
+  float: top-right;
+  color: black;
+  font-style: italic;
+  margin: 0 10px 0 290px;
+
+}
+p.tweetText {
+  margin: 5px 7px 5px 15px;
+  text-align: left;
+}
+
+article footer {
+width: 100%;
+border-top: solid #eee 1px;
+text-align: left;
+}

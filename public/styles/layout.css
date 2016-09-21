@@ -9,17 +9,31 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+@font-face {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 
 /*
  * Global layout stuff
  */
 
 body {
+  font-family: 'Roboto Condensed';
   margin: 0;
   color: #244751;
   background-color: #eee;
 }
-
+main {
+  width: 450px;
+  text-align: center;
+  margin: 140px auto 0 auto;
+  background: white;
+}
+.limiter {
+  color: red;
+  font-weight: bold;
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
