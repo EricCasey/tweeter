@@ -84,15 +84,27 @@ $(document).ready(function() {
       req_body[field.name] = field.value;
     });
 
-    $.ajax({
-      'url': '/tweets',
-      'method': 'POST',
-      'dataType': 'json',
-      'data': req_body,
-      success: loadTweets,
-      error: function(err) {
-        console.log(err)
-      }
-    });
+
+        var inputLength = $(this.text).val().length;
+        if (inputLength < 140 && inputLength > 0) {
+          $.ajax({
+            'url': '/tweets',
+            'method': 'POST',
+            'dataType': 'json',
+            'data': req_body,
+            success: loadTweets,
+            error: function(err) {
+              console.log(err)
+            }
+          });
+        } else {
+          alert("too long");
+        }
+
+
+
+
   });
+
+
 });

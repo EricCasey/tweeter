@@ -18,11 +18,13 @@ $(document).ready(function() {
     }
   });
 
-  $("form").submit(function(event) {
-    event.preventDefault();
-    var inputLength = $(this.text).val().length;
-    if (inputLength > 140) {
-    } else if (inputLength === 0 || inputLength === "" || inputLength === null) {
-    }
-});
+//   $("form").submit(function(event) {
+//     event.preventDefault();
+//     var inputLength = $(this.text).val().length;
+//     if (inputLength > 140) {
+//
+//     } else if (inputLength === 0 || inputLength === "" || inputLength === null) {
+//     }
+// });
+
 });
