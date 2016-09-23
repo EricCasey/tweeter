@@ -1,8 +1,3 @@
-/*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
- */
 html {
   box-sizing: border-box;
 }
@@ -12,28 +7,42 @@ html {
 @font-face {
   font-family: 'Roboto Condensed', sans-serif;
 }
-
-
-/*
- * Global layout stuff
- */
-
 body {
   font-family: 'Roboto Condensed';
   margin: 0;
   color: #244751;
-  background-color: #eee;
+  background-image: url('../images/bg1.jpg');
+  background-repeat: repeat-y;
 }
 main {
   width: 450px;
   text-align: center;
-  margin: 140px auto 0 auto;
+  margin: 120px auto 50px auto;
   background: white;
+  border-radius: 8px;
+  opacity: 0.93;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  box-shadow: 5px 5px 3px #888888;
 }
 .limiter {
   color: red;
   font-weight: bold;
 }
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+.almost {
+  color: orange;
+  font-weight: bold;
+}
+#dot-matrix {
+    background: url(http://s14.directupload.net/images/111129/44ga9qid.png);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+#gif {
+  margin: 0 auto;
+  width:85%;
+  border-bottom: solid 3px teal;
+}

@@ -2,66 +2,43 @@
 <html lang="en">
 
 <head>
-    <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
-
-    <!-- External CSS -->
+    <title>The Tweeters - Home Page</title>
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
-
-    <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-
-    <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
-
-    <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
-
-    <!-- NAV CSS -->
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-
-    <!-- NEW TWEET CSS -->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-
-    <!-- ALL TWEETs CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="/styles/all-tweet.css" type="text/css" />
-
-
-
-
-
-
 </head>
-
 <body>
-
-    <!-- Top nav bar (fixed) -->
+    <div id="dot-matrix"></div>
     <nav id="nav-bar">
         <img class="logo" src="/images/bird.png">
-        <span class="header">Tweeter</span>
+        <span class="header">The Tweeters</span>
+        <div id="composeButton">
+            <button>
+            <i class="fa fa-pencil fa-fw" aria-hidden="true"></i>
+            Compose
+          </button>
+        </div>
     </nav>
-
-    <!-- Page-specific (main) content here -->
     <main class="container">
-
+        <div id="gif"><img id="loading" src="images/loading.gif" /></div>
         <section class="new-tweet">
-            <h2>Compose Tweet</h2>
-            <form action="tweets/" method="POST" enctype="application/x-www-form-urlencoded">
-
-                <textarea name="entrytext" id="entrytext" placeholder="What are you humming about?" ></textarea>
-
+            <h2>Compose The Tweeter!</h2>
+            <form action="tweets/" id="form" method="POST" enctype="application/x-www-form-urlencoded">
+                <textarea name="text" id="text" placeholder="What are you humming about?"></textarea>
                 <input type="submit" value="Tweet">
-
                 <span class="counter" id="counter">140</span>
             </form>
         </section>
-
-<section id="tweets-container">
-</section>
-
+        <section id="tweets-container">
+        </section>
     </main>
-    <!-- COUNTER JS -->
     <script type="text/javascript" src="/scripts/counter.js"></script>
 </body>
 

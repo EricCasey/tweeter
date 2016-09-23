@@ -3,25 +3,28 @@
   width: 85%;
   margin: 20px auto 10px auto;
   border: teal 2px solid;
-  border-radius: 10px;
+  border-radius: 4px;
   box-sizing: border-box;
   text-align: left;
   padding: 7px;
   display: inline-block;
+  opacity: 1;
+  display: none;
 }
-
-section.new-tweet h2 {
+.new-tweet h2 {
    font-size: 150%;
    border-bottom: 1px solid;
    margin-top: 8px;
    color: teal;
 }
 input {
-  border-radius: 3px;
+  border-radius: 4px;
+  background: white;
+  border: black 2px solid;
 }
 textarea {
   width: 100%;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 span.counter {
   float: right;

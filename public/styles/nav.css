@@ -1,3 +1,8 @@
+@keyframes wiggle {
+0% {transform:rotate(2deg);}
+50% {transform:rotate(-2deg);}
+100% {transform:rotate(2deg);}
+}
 #nav-bar {
   position: fixed;
   background: #00a087;
@@ -9,16 +14,32 @@
   float:left;
   border-bottom: solid 3px teal;
   z-index: 100;
+  opacity: 0.95;
 }
-
-#nav-bar .logo {
+.logo {
   height: 80px;
   width: 80px;
   margin: 0 10px;
+}
+.logo:hover {
+  animation: wiggle 0.5s infinite;
 }
 #nav-bar .header {
   position: absolute;
   height: 80px;
   font-size: 200%;
   line-height: 80px;
+}
+#composeButton {
+  float: right;
+  margin-top: 20px;
+}
+#composeButton button {
+  border-radius: 10px;
+  background: white;
+  border: 2px black solid;
+  padding: 7px;
+}
+button:hover {
+  animation: wiggle 0.5s infinite;
 }

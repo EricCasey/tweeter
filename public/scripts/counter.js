@@ -1,35 +1,28 @@
-// var $entrytext = $('#entrytext');
-// var $counter = $('#counter');
-//
-// console.log("LOADING CHAR COUNTER");
-//
-// function $(query) {
-//   return document.querySelector(query);
-// }
-//
-// function $$(query) {
-//   return document.querySelectorAll(query);
-// }
-//
-// $entrytext.addEventListener('input', function(ev) {
-//     $counter.innerText = 140 - this.value.length;
-//
-// });
-//
-
 'use-strict';
 
 $(document).ready(function() {
+
   var maxLength = 140;
-  $('#entrytext').on('input', function() {
+  $('#text').on('input', function() {
     var length = $(this).val().length;
-    console.log(length)
-    var length = maxLength - length;
+    length = maxLength - length;
     $('#counter').text(length);
     if (length < 0) {
       $('#counter').addClass("limiter");
+      $('#counter').replaceWith('<span class="counter limiter" id="counter">TOO LONG</span>');
+    } else if (length <= 5) {
+      $('#counter').addClass("almost");
     } else if (length > 0) {
       $('#counter').removeClass("limiter");
+      $('#counter').removeClass("almost");
     }
   });
+
+  $("form").submit(function(event) {
+    event.preventDefault();
+    var inputLength = $(this.text).val().length;
+    if (inputLength > 140) {
+    } else if (inputLength === 0 || inputLength === "" || inputLength === null) {
+    }
+});
 });
