@@ -10,11 +10,7 @@ The server is built with Node, Express and Mongo and allows users to request and
 
 Students must work with and implement the HTML, CSS and client-side JS to bring this project to life.
 
-## Final Product
-
-The end result should look and function like this:
-
-!["End Result"](https://d.pr/i/1eyEY/4MEH16BY+)
+##FINAL PRODUCT 
 
 ## Getting Started
 
@@ -37,9 +33,8 @@ Dependencies:
 
 **This project assumes that:**
 
-- It is running in our Vagrant machine (and therefore...)
 - It is Running with Node 5.10.x or above
-- `mongod` is up and running in the VM (you may have to start it up if connection fails). You can check if it is by using `ps aux | grep mongod` to see a list of processes that match `mongod`
+- A mongoDB database is running with the app.
 
 
 
